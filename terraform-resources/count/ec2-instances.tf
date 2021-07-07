@@ -5,6 +5,7 @@ resource "aws_instance" "web-server" {
 
   tags = {
     "Name" = "web-${count.index}"
+    "env"  = "val"
   }
 
 }
