@@ -11,7 +11,7 @@
 * create_before_destroy
 
 
-##### <`ignore_changes - Usually terraform would differ planned changes vs current environment, by specifying `ignore_changes = true`, resource in terraform configuration file would remain the same, even though it could be changed manually in environment. By this terraform will ignore planned updates for existing object.`>
+##### `ignore_changes` - Usually terraform would differ planned changes vs current environment, by specifying `ignore_changes = true`, resource in terraform configuration file would remain the same, even though it could be changed manually in environment. By this terraform will ignore planned updates for existing object.
 
 
 ##### `prevent_destroy` - Terraform will reject the changes of destroying object/resource in planning state, in other words - if `lifecycle` block includes `prevent_destroy = true`, it is not possible to destroy the resource via `terraform apply`.
