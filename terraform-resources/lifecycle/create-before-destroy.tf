@@ -17,6 +17,9 @@ resource "aws_instance" "test-vm" {
   lifecycle {
     # create_before_destroy = true # Used in 1st example of lifecycle block.create_before_destroy 
     # prevent_destroy = true
+    ignore_changes = [
+      tags, instance_type
+    ]
   }
 
 }
