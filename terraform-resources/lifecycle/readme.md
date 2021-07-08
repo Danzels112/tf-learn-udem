@@ -1,4 +1,4 @@
- The `lifecycle` meta argument <h2>
+ <h2>The `lifecycle` meta argument 
  
 
 
