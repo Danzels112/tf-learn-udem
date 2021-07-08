@@ -20,7 +20,7 @@
 ##### `create_before_destroy` - By default terraform, if there is replacement of resource needed due to any reasons, would destroy resoruce and then create a new resource (REPLACEMENT), with `create_before_destroy = true` the flow would be vice versa Create --> Destroy.
 
 
-resource "aws_instance" "test-vm" {
+`resource "aws_instance" "test-vm" {
   ami               = "ami-089b5384aac360007"
 #availability_zone = "eu-central-1a"
   availability_zone = "eu-central-1b"
@@ -40,3 +40,4 @@ resource "aws_instance" "test-vm" {
   }
 
 }
+`
