@@ -5,11 +5,11 @@ resource "aws_instance" "test-ins" {
   count         = var.instance_count
   user_data     = <<-EOF
     #!/bin/bash
-    sudo yum update -y
-    sudo yum install httpd -y
+    sudo yum update -yum
+    sudo yum install -y httpd
+    sudo service httpd start
     sudo systemctl enable httpd
-    sudo systemctl start httpd
-    echo "<h1> Welcome D <h1>" > /var/www/html/index.html
+    echo "<h1> Welcome to the Hell! Infra created terrafrom in eu-central-1<h1>" > /var/www/html/index.html
     EOF
 
   tags = {
