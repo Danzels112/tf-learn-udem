@@ -10,8 +10,20 @@ terraform {
 }
 provider "aws" {
     region  = "eu-central-1"
-    # default profile, using the aws configure configurations path=$HOME/.aws/credentials
     profile = "default"
+
+/* 
+Value "default" for profile `key, using the aws configure configurations, default path=$HOME/.aws/credentials
+It is possible to manually point to custom credential file using `shared_credentials_file` parameter and providing the path.
+That would override default behaviour.
+
+It is also possible to use static credentials
+
+
+*/
+
+    # default profile, using the aws configure configurations path=$HOME/.aws/credentials
+    #profile = "default"
     # shared credentials files, goes along with above
     # shared_credentials_file = "path to the /credentials"
 
