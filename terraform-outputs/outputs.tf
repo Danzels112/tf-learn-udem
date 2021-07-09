@@ -1,0 +1,19 @@
+output "aws_instance_name" {
+  value = aws_instance.test-ins.tags["Name"]
+
+}
+
+output "public_ip" {
+  value = aws_instance.test-ins.public_ip
+}
+output "private_ip" {
+  value = aws_instance.test-ins.private_ip
+
+}
+output "security_groups" {
+  value = aws_instance.test-ins.security_groups
+}
+output "public_dns" {
+  value = "https://${aws_instance.test-ins.public_dns}"
+
+}
