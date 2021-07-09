@@ -19,7 +19,7 @@ output "public_dns" {
 }
 
 # It is also possible to supress the output and mark it with sensetivity statement. E.g below:
-# output "public_dns" {
-#   value = "https://${aws_instance.test-ins.public_dns}"
-#   sensitive = true
-# }
+output "public_dns" {
+  value = "https://${aws_instance.test-ins.public_dns}"
+  sensitive = true
+}
