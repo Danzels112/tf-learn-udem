@@ -1,6 +1,6 @@
 ## Terraform foundation
 
-#### Following repository includes examples and explanations of terraform basics, examples of code are provided in respective folders for each category>sub-category. In the folders the following examples are covered, it is encouraged to test everything in your own environment to understand how terrafrom `really` works:
+#### Following repository includes examples and explanations of terraform basics, examples of code are provided in respective folders for each category>sub-category. In the folders the following examples are covered, it is encouraged to test everything in your own environment to understand how terrafrom *really* works:
 ```
 * Terraform Blocks
 * Terrafrom Variables
@@ -13,11 +13,11 @@
 
 ### In order to navigate through examples and execute them, there are few perequisites:
 #### *Please follow the official installation guides for your respective Operating system*
-
+```
 * AWS CLI
 * AWS Account
 * Terrafrom 
 * GitHub
 * VS Code
-
+```
 # This will be filled with information, TBD
