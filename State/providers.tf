@@ -24,4 +24,3 @@ terraform {
     # dynamodb_table = <tableName>
   }
 }
-
