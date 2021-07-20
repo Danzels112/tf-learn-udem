@@ -3,9 +3,9 @@ resource "aws_instance" "test-ins" {
   ami           = data.aws_ami.amxlinux.id
   instance_type = "t2.micro"
   key_name      = "terraform-key"
-  
 
-  user_data     = <<-EOF
+
+  user_data = <<-EOF
     #!/bin/bash
     sudo yum update -yum
     sudo yum install -y httpd
