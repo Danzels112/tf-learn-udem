@@ -19,6 +19,9 @@ terraform {
     bucket = "state-bucket-dterraform"
     key    = "dev/terraform.tfstate"
     region = "eu-central-1"
+
+    #  It is also possible to enable the state locking feature of tfstate file
+    # dynamodb_table = <tableName>
   }
 }
 
